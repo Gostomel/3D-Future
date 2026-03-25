@@ -14,12 +14,12 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-medium hover:text-neon-blue transition-colors">Services</a>
-          <a href="#" className="text-sm font-medium hover:text-neon-blue transition-colors">Showcase</a>
-          <a href="#" className="text-sm font-medium hover:text-neon-blue transition-colors">Process</a>
-          <button className="bg-neon-blue text-black px-5 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2">
+          <a href="#services" className="text-sm font-medium hover:text-neon-blue transition-colors">Services</a>
+          <a href="#showcase" className="text-sm font-medium hover:text-neon-blue transition-colors">Showcase</a>
+          <a href="#quote" className="text-sm font-medium hover:text-neon-blue transition-colors">Process</a>
+          <a href="#quote" className="bg-neon-blue text-black px-5 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform flex items-center gap-2">
             Get Quote <ArrowRight size={16} />
-          </button>
+          </a>
         </div>
 
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -34,12 +34,12 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden mt-4 glass-card p-6 flex flex-col gap-4"
         >
-          <a href="#" className="text-lg font-medium">Services</a>
-          <a href="#" className="text-lg font-medium">Showcase</a>
-          <a href="#" className="text-lg font-medium">Process</a>
-          <button className="bg-neon-blue text-black px-5 py-3 rounded-xl text-lg font-bold">
+          <a href="#services" onClick={() => setIsOpen(false)} className="text-lg font-medium">Services</a>
+          <a href="#showcase" onClick={() => setIsOpen(false)} className="text-lg font-medium">Showcase</a>
+          <a href="#quote" onClick={() => setIsOpen(false)} className="text-lg font-medium">Process</a>
+          <a href="#quote" onClick={() => setIsOpen(false)} className="bg-neon-blue text-black px-5 py-3 rounded-xl text-lg font-bold text-center">
             Get Quote
-          </button>
+          </a>
         </motion.div>
       )}
     </nav>

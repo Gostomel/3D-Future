@@ -35,7 +35,7 @@ export default function App() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center px-6 overflow-hidden">
+      <section id="hero" className="relative h-screen flex items-center px-6 overflow-hidden">
         <HeroScene />
         
         <div className="max-w-7xl mx-auto w-full pt-20">
@@ -62,12 +62,12 @@ export default function App() {
               We bridge the gap between imagination and reality with immersive 3D modeling and interactive experiences.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2">
+              <a href="#showcase" className="bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2">
                 View Showcase <ArrowRight size={20} />
-              </button>
-              <button className="glass-card px-8 py-4 font-bold hover:bg-white/10 transition-colors">
+              </a>
+              <a href="#services" className="glass-card px-8 py-4 font-bold hover:bg-white/10 transition-colors">
                 Our Process
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -110,7 +110,7 @@ export default function App() {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section id="services" className="py-24 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Unmatched Precision</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">Our workflow combines AI-driven optimization with human artistic vision.</p>
@@ -134,7 +134,7 @@ export default function App() {
       </section>
 
       {/* Showcase Section (Placeholder for 3D Carousel) */}
-      <section className="py-24 bg-gradient-to-b from-black to-zinc-900 overflow-hidden">
+      <section id="showcase" className="py-24 bg-gradient-to-b from-black to-zinc-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-16 flex items-end justify-between">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Works</h2>
